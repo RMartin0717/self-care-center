@@ -13,7 +13,6 @@ black - #000000;
 
 body {
   background: linear-gradient(0deg, #f7e4bf, #78a7c6 40%, #134d71 85%);
-  /* background: linear-gradient(#134d71, #78a7c6, #f7e4bf); */
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   color: #ffffff;
@@ -69,14 +68,6 @@ label {
   font-size: 1rem;
 }
 
-.message {
-  width: 60vw;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 input[type="radio"] {
   margin-right: .75rem;
   width: 1.1rem;
@@ -96,10 +87,29 @@ button {
   font-size: 1rem;
 }
 
+.message {
+  width: 60vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.random-message {
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  margin: auto;
+}
+
 img {
   width: 5vw;
   min-width: 70px;
   padding: 3vh 30vw 3vh 30vw;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.hidden {
+  display: none!important;
 }

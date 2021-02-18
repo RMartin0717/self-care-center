@@ -1,7 +1,7 @@
 
 var receiveMessageBtn = document.querySelector(".receive-message-button");
 var randomMessage = document.querySelector(".random-message");
-
+var image = document.querySelector(".meditation-image");
 
 var affirmations = [
 "I forgive myself and set myself free.",
@@ -42,19 +42,13 @@ receiveMessageBtn.addEventListener("click", receiveMessage);
 function receiveMessage() {
   if(document.getElementById('affirmation').checked) {
     randomMessage.innerText = affirmations[getRandomIndex(affirmations)];
+    image.classList.add("hidden");
   } else if(document.getElementById('mantra').checked) {
     randomMessage.innerText = mantras[getRandomIndex(mantras)];
+    image.classList.add("hidden");
   } else {
     alert("Please select between an affirmation message or a mantra message :)")
   }
-  //if affirmation is selected, return a random affirmation
-  //if mantra is selected, return a random mantras
-  //display message in .message div and hide mediation image
-}
-
-function getRandomMessage(messageArray) {
-  var message = messageArray[Math.floor(Math.random() * messageArray.length)];
-  return message;
 }
 
 function getRandomIndex(messageArray) {
