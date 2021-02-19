@@ -2,6 +2,9 @@
 var receiveMessageBtn = document.querySelector(".receive-message-button");
 var randomMessage = document.querySelector(".random-message");
 var image = document.querySelector(".meditation-image");
+var favoriteBtn = document.querySelector(".favorite-button");
+var viewFavoritesBtn = document.querySelector(".view-favorites-button");
+
 
 var affirmations = [
 "I forgive myself and set myself free.",
@@ -35,22 +38,47 @@ var mantras = [
 "Onward and upward.",
 "I am the sky, the rest is weather.",
 ];
+var favorites = [];
+
 
 
 receiveMessageBtn.addEventListener("click", receiveMessage);
+favoriteBtn.addEventListener("click", saveFavorite);
+// viewFavoritesBtn.addEventListener("click", viewFavorites);
+
+
+
+
+function getRandomIndex(messageArray) {
+  return Math.floor(Math.random() * messageArray.length)
+}
 
 function receiveMessage() {
   if(document.getElementById('affirmation').checked) {
     randomMessage.innerText = affirmations[getRandomIndex(affirmations)];
     image.classList.add("hidden");
+    favoriteBtn.classList.remove("hidden");
+    viewFavoritesBtn.classList.remove("hidden");
   } else if(document.getElementById('mantra').checked) {
     randomMessage.innerText = mantras[getRandomIndex(mantras)];
     image.classList.add("hidden");
+    favoriteBtn.classList.remove("hidden");
+    viewFavoritesBtn.classList.remove("hidden");
   } else {
     alert("Please select between an affirmation message or a mantra message :)")
   }
 }
 
-function getRandomIndex(messageArray) {
-  return Math.floor(Math.random() * messageArray.length)
+
+function saveFavorite() {
+  favorites.push(randomMessage.innerText);
 }
+
+function viewFavorites() {
+
+}
+
+
+
+
+//
