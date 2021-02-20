@@ -4,7 +4,7 @@ var randomMessage = document.querySelector(".random-message");
 var image = document.querySelector(".meditation-image");
 var favoriteBtn = document.querySelector(".favorite-button");
 var viewFavoritesBtn = document.querySelector(".view-favorites-button");
-
+var favoriteMessageDisplay = document.querySelector(".favorite-message-display");
 
 var affirmations = [
 "I forgive myself and set myself free.",
@@ -44,8 +44,6 @@ var favorites = [];
 
 receiveMessageBtn.addEventListener("click", receiveMessage);
 favoriteBtn.addEventListener("click", saveFavorite);
-// viewFavoritesBtn.addEventListener("click", viewFavorites);
-
 
 
 
@@ -69,16 +67,37 @@ function receiveMessage() {
   }
 }
 
-
 function saveFavorite() {
   favorites.push(randomMessage.innerText);
 }
 
-function viewFavorites() {
-
-}
 
 
+// window.localStorage.setItem("favorites", JSON.stringify[favorites]);
+// JSON.parse(window.localStorage.getItem("favorites"));
+// selfCareStorage.setItem("favorites", []);
 
 
+
+
+//different event listener so that favorites display when page is opened?
+// var favoriteMessageDisplay = document.querySelector(".favorite-message-display");
 //
+// window.addEventListener("load", displayMessages);
+//
+// function displayMessages() {
+//  // for (var i = 0; i < favorites.length; i++) {
+//     favoriteMessageDisplay.innerHTML += `
+//     <div>
+//       <p class="random-message">✨favorites[i]✨</p>
+//       <button>Remove From Favorites</button>
+//     </div>
+//     `
+//   // }
+// }
+
+
+
+
+
+// export {favorites};
