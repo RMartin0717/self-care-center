@@ -38,9 +38,18 @@ var mantras = [
 "Onward and upward.",
 "I am the sky, the rest is weather.",
 ];
-var favorites = [];
-
-
+var localStorageFavorites = window.localStorage.getItem("favorites");
+var parsedFavorites = JSON.parse(localStorageFavorites);
+//if parsedFavorites <--looking for truthy, so if parsedFavorites contains anything, it is truthy
+  //? true
+  //: false
+var favorites = (parsedFavorites.length)
+  ? parsedFavorites
+  : [];
+//if favorites are already saved in localStorage, then we want local localStorage
+//if not, we want to initialize an emptry array
+//if localStorage is empty, favorites should be empty
+//if it has favorites, that's what favorites should be
 
 receiveMessageBtn.addEventListener("click", receiveMessage);
 favoriteBtn.addEventListener("click", saveFavorite);
