@@ -68,36 +68,10 @@ function receiveMessage() {
 }
 
 function saveFavorite() {
-  favorites.push(randomMessage.innerText);
+  var newFavorite = {
+    text: randomMessage.innerText,
+    id: Date.now(),
+  }
+  favorites.push(newFavorite);
+  window.localStorage.setItem("favorites", JSON.stringify(favorites));
 }
-
-
-
-// window.localStorage.setItem("favorites", JSON.stringify[favorites]);
-// JSON.parse(window.localStorage.getItem("favorites"));
-// selfCareStorage.setItem("favorites", []);
-
-
-
-
-//different event listener so that favorites display when page is opened?
-// var favoriteMessageDisplay = document.querySelector(".favorite-message-display");
-//
-// window.addEventListener("load", displayMessages);
-//
-// function displayMessages() {
-//  // for (var i = 0; i < favorites.length; i++) {
-//     favoriteMessageDisplay.innerHTML += `
-//     <div>
-//       <p class="random-message">✨favorites[i]✨</p>
-//       <button>Remove From Favorites</button>
-//     </div>
-//     `
-//   // }
-// }
-
-
-
-
-
-// export {favorites};
