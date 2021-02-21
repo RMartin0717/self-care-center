@@ -36,3 +36,7 @@ I chose to also build a feature that would allow the user to favorite a message,
 In addition, I researched and utilized Local Storage, which allowed me to work across two separate HTML pages with their own Javascript pages. I used this to store an array of favorites that the user can access and modify on refresh and while moving back and forth between the main page and the favorites page.
 
 <img src="/self-care-center-page.gif" width="400">
+
+## Request for Feedback
+
+I would love feedback on how to refactor the receiveMessage method on line 63 of main.js. I tried to clean it up by declaring a variable to hold onto "affirmations" or "mantras" and it ended up making the code just as long.
