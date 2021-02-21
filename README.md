@@ -1,24 +1,32 @@
 # Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+## Contributors
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
+[Riley Martin](https://github.com/RMartin0717)
 
-## Learning Goals
+### Code Review
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+[Jake West--Mentor](https://github.com/jkwest-93)
 
-## Setup
+## Technologies & languages used:
+- GitHub
+- Terminal
+- Atom
+- Google's Dev Tools
+- JavaScript
+- HTML
+- CSS
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+## Deploy Link
+Find the site [here!](https://rmartin0717.github.io/self-care-center/)
 
+The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html).
+
+## About
+This was my first project for Turing School of Software & Design in which I was responsible for coding across HTML, CSS, and Javascript. My task was to build out a comp based on a provided image of a Self Care Center web page.
+
+For the Minimum Viable Product, I needed to create a "Receive Message" button with functionality to display a random message from either a list of affirmations or a list of mantras. This message replaces a meditation image.
+
+I chose to also build a feature that would allow the user to favorite a message, which would be added to a list of favorite messages and viewable on a page accessed by clicking the "View Favorites" button. Users can navigate back to the main page by clicking on "Back to Main" and remove favorited messages by clicking on "Remove From Favorites."
+
+In addition, I researched and utilized Local Storage, which allowed me to work across two separate HTML pages with their own Javascript pages. I used this to store an array of favorites that the user can access and modify on refresh and while moving back and forth between the main page and the favorites page.

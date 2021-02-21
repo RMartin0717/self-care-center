@@ -43,7 +43,7 @@ var parsedFavorites = JSON.parse(localStorageFavorites);
 //if parsedFavorites <--looking for truthy, so if parsedFavorites contains anything, it is truthy
   //? true
   //: false
-var favorites = (parsedFavorites.length)
+var favorites = (parsedFavorites)
   ? parsedFavorites
   : [];
 //if favorites are already saved in localStorage, then we want local localStorage
@@ -75,6 +75,7 @@ function receiveMessage() {
     alert("Please select between an affirmation message or a mantra message :)")
   }
 }
+
 
 function saveFavorite() {
   var newFavorite = {
