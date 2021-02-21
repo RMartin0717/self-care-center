@@ -2,66 +2,29 @@
   margin: 0;
   padding: 0;
 }
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
-black - #000000;
-*/
 
 body {
-  background: linear-gradient(0deg, #f7e4bf, #78a7c6 40%, #134d71 85%);
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  color: #ffffff;
   display: flex;
-  justify-content: space-around;
+  text-align: center;
   height: 100vh;
+
+  background: linear-gradient(0deg, #f7e4bf, #78a7c6 40%, #134d71 85%);
+  color: #ffffff;
+
+  font-family: 'Quicksand', sans-serif;
 }
 
 main {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
-  margin: 0vh 0vw 18vh 0vw;
-}
-
-h1 {
-  font-size: 1.7rem;
-}
-
-h3 {
-  font-size: 1.25rem;
 }
 
 div {
   background: #ffffff;
   border-radius: 9px;
-}
-
-.type-of-message {
-  color: #000000;
-  font-style: italic;
-  width: 38vw;
-  height: 9vh;
-  margin-top: .6rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.radio-buttons {
-  display: flex;
-  flex-direction: row;
-  width: 38vw;
-  justify-content: space-around;
-  margin: .25rem .5rem 1rem .5rem;
-
 }
 
 label {
@@ -75,31 +38,19 @@ input[type="radio"] {
 }
 
 button {
-  background: #134d71;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  color: #ffffff;
-  border-radius: 4px;
   width: 14vw;
   min-width: 150px;
-  border-style: none;
   padding: .25rem;
-  font-size: 1rem;
-}
+  border-style: none;
+  margin-bottom: 1rem;
 
-.message {
-  width: 60vw;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  border-radius: 4px;
 
-.random-message {
+  background: #134d71;
+  color: #ffffff;
+
   font-family: 'Quicksand', sans-serif;
-  color: #000000;
   font-size: 1rem;
-  margin: auto;
 }
 
 img {
@@ -110,6 +61,55 @@ img {
   margin-bottom: auto;
 }
 
+a {
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.type-of-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38vw;
+  height: 9vh;
+  padding: 1rem;
+  margin-top: .6rem;
+
+  color: #000000;
+
+  font-style: italic;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 38vw;
+  margin: .25rem .5rem 1rem .5rem;
+
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  height: 20vh;
+  margin: 0vh 0vw 18vh 0vw;
+}
+
+.random-message {
+  margin: auto;
+
+  color: #000000;
+
+  font-size: 1rem;
+}
+
 .hidden {
   display: none!important;
+}
+
+.buttons {
+  display: inline;
 }
